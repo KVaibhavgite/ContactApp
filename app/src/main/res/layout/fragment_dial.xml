@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Dial">
 
-    <ImageView
-        android:id="@+id/dialbtn"
-        android:layout_width="109dp"
-        android:layout_height="99dp"
-        android:icon="@drawable/contacts" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Enter your number"
+        android:inputType="phone"
+        tools:ignore="HardcodedText"
+        android:autofillHints="" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/dial"
+        android:layout_marginLeft="180dp"
+        android:contentDescription="TODO"
+        android:focusable="true"
+        tools:ignore="ContentDescription" />
+
+
 </FrameLayout>
